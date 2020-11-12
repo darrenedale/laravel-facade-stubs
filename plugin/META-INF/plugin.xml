@@ -1,0 +1,32 @@
+<idea-plugin version="2">
+  <id>net.equituk.idea.plugin.laravel-phpstorm-stubs</id>
+  <name>Laravel PHPStorm Stubs</name>
+  <version>0.2</version>
+  <vendor email="darren@equituk.net" url="https://github.com/darrenedale/laravel-phpstorm-stubs">Darren Edale</vendor>
+
+  <description><![CDATA[
+    Provides some missing stub declarations for Laravel (notably for facades).
+  ]]></description>
+
+  <change-notes><![CDATA[
+    <h3>0.2</h3>
+    <ul>
+      <li>Added Log facade.</li>
+      <li>Added Validator facade.</li>
+    </ul>
+    <h3>0.1</h3>
+    <ul>
+      <li>Initial support.</li>
+    </ul>
+  ]]>
+  </change-notes>
+
+  <idea-version since-build="163.3984"/>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.jetbrains.php</depends>
+
+  <extensions defaultExtensionNs="com.jetbrains.php">
+    <libraryRoot id="Laravel PHPStorm Stubs" path="/laravel/" runtime="false"/>
+  </extensions>
+</idea-plugin>
