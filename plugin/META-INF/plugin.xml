@@ -1,14 +1,18 @@
 <idea-plugin version="2">
-  <id>net.equituk.idea.plugin.laravel-phpstorm-stubs</id>
-  <name>Laravel PHPStorm Stubs</name>
-  <version>0.2</version>
-  <vendor email="darren@equituk.net" url="https://github.com/darrenedale/laravel-phpstorm-stubs">Darren Edale</vendor>
+  <id>net.equituk.idea.plugin.laravel-facade-stubs</id>
+  <name>Laravel Facade Stubs</name>
+  <version>0.3</version>
+  <vendor email="darren@equituk.net" url="https://github.com/darrenedale/laravel-facade-stubs">Darren Edale</vendor>
 
   <description><![CDATA[
-    Provides some missing stub declarations for Laravel (notably for facades).
+    Provides stub declarations for built-in Laravel facades.
   ]]></description>
 
   <change-notes><![CDATA[
+    <h3>0.3</h3>
+    <ul>
+      <li>Added (incomplete) Model facade.</li>
+    </ul>
     <h3>0.2</h3>
     <ul>
       <li>Added Log facade.</li>
@@ -27,6 +31,6 @@
   <depends>com.jetbrains.php</depends>
 
   <extensions defaultExtensionNs="com.jetbrains.php">
-    <libraryRoot id="Laravel PHPStorm Stubs" path="/laravel/" runtime="false"/>
+    <libraryRoot id="Laravel Facade Stubs" path="/laravel/" runtime="false"/>
   </extensions>
 </idea-plugin>

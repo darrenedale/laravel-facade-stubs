@@ -11,4 +11,6 @@ deploy:
   file: laravel-facade-stubs-$TRAVIS_TAG.jar
   on:
     tags: true
+    repo: darrenedale/laravel-facade-stubs
+    branch: main
   skip_cleanup: 'true'
