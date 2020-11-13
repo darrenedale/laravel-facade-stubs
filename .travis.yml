@@ -1,13 +1,14 @@
 language: generic
+branches:
+  only: main
 script:
 - cd plugin/
-- zip -r phpstorm-laravel-plugin-$TRAVIS_TAG.jar *
+- zip -r laravel-facade-stubs-$TRAVIS_TAG.jar *
 deploy:
   provider: releases
   api_key:
     secure: FOQnvuvKtWmcdGxCsaP/DCrvQJkV3I8bwUJtgGF6aKsIlnueSUjBWLv/bh1ytYYNWRpMwGLMLWa7xlsozoe8gOGr7u0rje2UY+a+n7YdOjf8AAHY6uCg2f2ZvPPag3BG9iSrueAieNDRKJRLDeCfWwXzfdbOrcgHL4N0u/TjFGd3TnBaYEEsx8NWuZoqZvTh5o0jXqRIh0mIASAtxGsl8c+WPIJAKLRDEinUgn1/9fOTwwPYEtFRbK3KBa9V91r8JFqTKf1smEoTneYSGJMYEO5gSCmF8OizHk5FB0EEfVaywFdlSGbS+gcl//aahwfP7bZ75pLgVUEba5ppxaBYuKadiRgP1bWJzx6hAAmfeK0Abdh5ROl/3kpTvilgEQM0M+4thNdPfphsn4yPJ+K+fBVDP15Wf//cQwTJvyzrqBV6NJYD8sOy8bzCCrCQXkeynhgtGcVFq8yO+MAgQ/HH7MGvRyEE7RFcnolbrDYmIZwPuqrePswQRjQ0dExcGum3k6ajzir+Wo1c6e362qorAETK7UPNC+Tli92g5L+28OW173j3aS98X0EFAammpg2jkMMl75PMtJYGoHWqZlo/Ppy5en3uRBvug6cQV2pAdRBVe5uQryLcv7var+K8YqXol0L/vhCLBSmfrm8b7Jne3SgTWWRmmogAFfuizy4ZMOE=
-  file: phpstorm-laravel-plugin-$TRAVIS_TAG.jar
+  file: laravel-facade-stubs-$TRAVIS_TAG.jar
   on:
-    repo: darrenedale/laravel-phpstorm-stubs
-    branch: main
+    tags: true
   skip_cleanup: 'true'
