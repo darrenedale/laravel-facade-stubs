@@ -1,6 +1,9 @@
 language: generic
 branches:
-  only: main
+  # only main or tagged releases
+  only:
+  - main
+  - /^(v )?\d+(\.\d+)?(\.\d+)?(-\S*)?$/
 script:
 - cd plugin/
 - zip -r laravel-facade-stubs-$TRAVIS_TAG.jar *
