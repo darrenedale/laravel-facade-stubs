@@ -7,6 +7,15 @@ use Traversable;
 class Model
 {
 	/**
+	 * Create but don't store an instance of a Model.
+	 *
+	 * @param array $properties Associative array of properties with which to fill the new Model.
+	 *
+	 * @return static The new instance.
+	 */
+	public static function make(array $properties): self {}
+
+	/**
 	 * Create and store an instance of a Model.
 	 *
 	 * @param array $properties Associative array of properties with which to fill the created Model.

@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>net.equituk.idea.plugin.laravel-facade-stubs</id>
   <name>Laravel Facade Stubs</name>
-  <version>0.4</version>
+  <version>0.4.1</version>
   <vendor email="darren@equituk.net" url="https://github.com/darrenedale/laravel-facade-stubs">Darren Edale</vendor>
 
   <description><![CDATA[
@@ -9,11 +9,16 @@
   ]]></description>
 
   <change-notes><![CDATA[
-    <h3>0.3</h3>
+    <h3>0.4.1</h3>
+    <ul>
+      <li>Added make() static method to Model facade.</li>
+      <li>Fixed versioning error in previous release's change list.</li>
+    </ul>
+    <h3>0.4</h3>
     <ul>
       <li>Added (incomplete) Session facade.</li>
     </ul>
-    <h3>0.4</h3>
+    <h3>0.3</h3>
     <ul>
       <li>Added (incomplete) Model facade.</li>
     </ul>
