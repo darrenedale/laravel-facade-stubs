@@ -9,10 +9,25 @@
   ]]></description>
 
   <change-notes><![CDATA[
-    <h3>0.4.1</h3>
+    <h3>0.5</h3>
     <ul>
-      <li>Added make() static method to Model facade.</li>
-      <li>Fixed versioning error in previous release's change list.</li>
+      <li>
+        Updated readme and plugin meta info
+        <ul>
+          <li>fixed link to CI build status in readme.</li>
+          <li>plugin meta info missed from previous (tagged) commit.</li>
+        </ul>
+      </li>
+    </ul>
+    <h3>0.5</h3>
+    <ul>
+      <li>
+        Added (incomplete) View facade
+        <ul>
+          <li>added View facade (exists(), first(), composer(), create()).</li>
+          <li>added Renderable and View contracts.</li>
+        </ul>
+      </li>
     </ul>
     <h3>0.4</h3>
     <ul>

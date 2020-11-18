@@ -1,6 +1,6 @@
 # Laravel Facade Stubs
 
-[![Build Status](https://travis-ci.org/darrenedale/laravel-phpstorm-stubs.svg?branch=main)](https://travis-ci.org/darrenedale/laravel-phpstorm-stubs)
+[![Build Status](https://travis-ci.org/darrenedale/laravel-facade-stubs.svg?branch=main)](https://travis-ci.org/darrenedale/laravel-facade-stubs)
 
 This repository contains a PHPStorm plugin that provides definitions for Laravel's built-in facades. It is a long way
 from complete.
